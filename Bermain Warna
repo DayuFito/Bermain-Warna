@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WARNA</title>
+</head>
+<?php
+if(!empty($_GET['color']))
+{
+    ?>
+    <style>
+        body{
+            background: <?php echo $_GET['color']?>;
+        }
+    </style>
+    <?php
+}
+?>
+<body>
+    <form action="" method="get">
+        <label>CHOSE THE BACKGROUND COLOR</label>
+        <br>
+        <input type="color" name="color">
+        <br>
+        <button>SAVE</button>
+    </form>
+</body>
+</html>
